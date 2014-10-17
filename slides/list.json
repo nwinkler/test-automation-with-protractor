@@ -7,9 +7,12 @@
         "writing-protractor-tests.md",
         "install.md",
         "config.md",
-        "syntax.md"
+        "syntax.md",
+        "run-your-tests.md",
+        "angular-scope.md",
+        "testing-non-angular-apps.md"
     ],
-    "lessons-learned.md",
-    "continuous-integration-approach.md",
+    ["lessons-learned.md"],
+    ["continuous-integration-approach.md"],
     "questions.md"
 ]
