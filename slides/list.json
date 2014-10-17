@@ -1,4 +1,10 @@
 [
     "index.md",
-    "would-you-hire-this-guy.md"
+    "would-you-hire-this-guy.md",
+    "what-is-protractor.md",
+    "why-do-we-need-end-to-end-testing.md",
+    "writing-protractor-tests.md",
+    "lessons-learned.md",
+    "continuous-integration-approach.md",
+    "questions.md"
 ]
