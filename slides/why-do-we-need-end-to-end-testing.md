@@ -6,3 +6,4 @@ Different kinds of tests for different purposes:
 * Integration Tests
 * Performance Tests
 * End-to-End Tests
+* ...
