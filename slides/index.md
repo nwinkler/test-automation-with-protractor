@@ -1,10 +1,6 @@
 
 # Test Automation with Protractor
 
-From the terminal, pop in:
+Nils Winkler
 
-  ```yo reveal:slide "Slide Title"```
-
-Available options:
-
- ```--markdown --attributes --notes```
+FrankfurtJS, October 3rd 2014
