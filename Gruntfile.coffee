@@ -29,7 +29,7 @@ module.exports = (grunt) ->
             jshint:
                 files: ['js/*.js']
                 tasks: ['jshint']
-        
+
         connect:
 
             livereload:
@@ -77,8 +77,13 @@ module.exports = (grunt) ->
                     filter: 'isFile'
                 }]
 
-        
+        protractor:
 
+            options:
+                keepAlive: true,
+                configFile: "protractor.conf.js"
+
+            run: {}
 
     # Load all grunt tasks.
     require('load-grunt-tasks')(grunt)
@@ -125,7 +130,7 @@ module.exports = (grunt) ->
             'copy'
         ]
 
-    
+
 
     # Define default task.
     grunt.registerTask 'default', [
