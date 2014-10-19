@@ -2,7 +2,7 @@
 
 ---
 
-##  Install
+###  Install
 
 Use the [grunt-protractor-runner](https://github.com/teerapap/grunt-protractor-runner) plugin:
 
@@ -21,7 +21,7 @@ Automatic download of the WebDriver binaries as part of `npm install` (in `packa
 
 ---
 
-## Create a configuration file
+### Create a configuration file
 
 ```javascript
 exports.config = {
@@ -36,7 +36,7 @@ Define the URL to test.
 
 ---
 
-## Create a Grunt configuration
+### Create a Grunt configuration
 
 ```javascript
 protractor: {
@@ -50,7 +50,7 @@ protractor: {
 
 ---
 
-##  Implement your test
+###  Implement your test
 
 Use standard Jasmine syntax
 
@@ -68,7 +68,7 @@ describe('my app', function() {
 
 ---
 
-##  Run Your Tests
+###  Run Your Tests
 
 Deploy/Start your web application
 
@@ -82,7 +82,7 @@ Watch in awe!
 
 ---
 
-##  Angular Integration
+###  Angular Integration
 
 Select DOM elements by ID, CSS, or by Angular model:
 
@@ -108,7 +108,7 @@ The `evaluate` function allows you to take a look at the element's Angular *scop
 
 ---
 
-##  Testing non-Angular apps
+###  Testing non-Angular apps
 
 Protractor is primarily used to test Angular apps, since it integrates really well with the Angular lifecycle and scope.
 

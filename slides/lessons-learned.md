@@ -2,7 +2,7 @@
 
 ---
 
-## Unique ID Values
+### Unique ID Values
 
 Use unique ID values on your controls to allow easy identification of the screen elements.
 
@@ -12,7 +12,7 @@ Make sure the ID values are consistent and don't change across test invocations.
 
 ---
 
-## Test on multiple browsers
+### Test on multiple browsers
 
 Tests can be run in parallel against multiple browsers:
 
@@ -28,7 +28,7 @@ Browser configuration documentation: https://github.com/angular/protractor/blob/
 
 ---
 
-## Understand OS-specific behavior
+### Understand OS-specific behavior
 
 Keyboard Input: Some operating systems (e.g. Mac OS X) handle keyboard input in a non-standard way.
 
@@ -42,7 +42,7 @@ webDriver.sleep(500);
 
 ---
 
-## Reusable test libraries
+### Reusable test libraries
 
 Since Protractor is written as a Node package, you can (and should!) create your own reusable test libraries.
 
@@ -60,7 +60,7 @@ Create reusable libraries for
 
 ---
 
-## Measure Code Coverage
+### Measure Code Coverage
 
 Just like with regular unit tests, get a feeling for how much of your code is covered by your tests.
 
