@@ -25,8 +25,8 @@ Automatic download of the WebDriver binaries as part of `npm install` (in `packa
 
 ```javascript
 exports.config = {
-    specs: ['test/e2e/**/*.spec'],
-    baseUrl:'http://localhost:8080/',
+  specs: ['test/e2e/**/*.spec'],
+  baseUrl:'http://localhost:8080/',
 };
 ```
 
@@ -35,6 +35,18 @@ Point it to your test files.
 Define the URL to test.
 
 ---
+
+## Create a Grunt configuration
+
+```javascript
+protractor: {
+  options: {
+    keepAlive: true,
+    configFile: "protractor.conf.js"
+  },
+  run: {}
+},
+```
 
 ---
 
@@ -63,7 +75,7 @@ Deploy/Start your web application
 Run the tests
 
 ```
-grunt protractor
+grunt protractor:run
 ```
 
 Watch in awe!
@@ -100,8 +112,10 @@ The `evaluate` function allows you to take a look at the element's Angular *scop
 
 Protractor is primarily used to test Angular apps, since it integrates really well with the Angular lifecycle and scope.
 
-Since it is just a wrapper around Selenium WebDriver, it can also be used to test non-Angular apps. Simply apply this change:
+Since it is just a wrapper around Selenium WebDriver, it can also be used to test non-Angular apps. Simply apply this change before running your test:
 
+```javascript
+browser.ignoreSynchronization = true;
 ```
-TBD
-```
+
+Protractor will now no longer wait for Angular to load, and you can use it to test any web application.
