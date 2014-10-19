@@ -25,7 +25,7 @@ describe('login', function() {
 
         var heading = present.element(by.css('h1'));
 
-        expect(heading.getText()).toBe('TEST AUTOMATION WITH PROTRACTOR');
+        expect(heading.getText()).toBe('Test Automation with Protractor');
     });
 
     it('should move to the next slide when pressing the n key', function() {
@@ -37,6 +37,6 @@ describe('login', function() {
 
         var heading = present.element(by.css('h2'));
 
-        expect(heading.getText()).toBe('WOULD YOU HIRE THIS GUY?');
+        expect(heading.getText()).toBe('Would You Hire This Guy?');
     });
 });
