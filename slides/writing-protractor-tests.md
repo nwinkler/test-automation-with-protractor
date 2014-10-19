@@ -6,7 +6,7 @@
 
 Use the [grunt-protractor-runner](https://github.com/teerapap/grunt-protractor-runner) plugin:
 
-```
+```bash
 npm install grunt-protractor-runner --save-dev
 ```
 
@@ -25,8 +25,8 @@ Automatic download of the WebDriver binaries as part of `npm install` (in `packa
 
 ```javascript
 exports.config = {
-  specs: ['test/e2e/**/*.spec'],
-  baseUrl:'http://localhost:8080/',
+  specs: ['test/**/*.spec'],
+  baseUrl:'http://localhost:9000/',
 };
 ```
 
@@ -74,7 +74,7 @@ Deploy/Start your web application
 
 Run the tests
 
-```
+```bash
 grunt protractor:run
 ```
 
