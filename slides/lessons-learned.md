@@ -64,4 +64,4 @@ Create reusable libraries for
 
 Just like with regular unit tests, get a feeling for how much of your code is covered by your tests.
 
-Remember: 100% code coverage does not mean that your code is error-free!
+**Remember**: 100% code coverage does not mean that your code is error-free!

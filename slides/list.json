@@ -1,7 +1,6 @@
 [
     "index.md",
     "would-you-hire-this-guy.md",
-    "why-do-we-need-end-to-end-testing.md",
     ["what-is-protractor.md"],
     ["writing-protractor-tests.md"],
     ["lessons-learned.md"],
