@@ -32,6 +32,8 @@ Browser configuration documentation: https://github.com/angular/protractor/blob/
 
 Keyboard Input: Some operating systems (e.g. Mac OS X) handle keyboard input in a non-standard way.
 
+<br>
+
 Animations: Take rendering speed of the OS/browser into account.
 
 ```javascript
@@ -52,6 +54,8 @@ var fooApp = require('foo-app-test');
 fooApp.session.login('john.doe', '12345');
 ```
 
+<br>
+
 Create reusable libraries for
 
 * Framework functionality used in multiple applications
@@ -63,5 +67,7 @@ Create reusable libraries for
 ### Measure Code Coverage
 
 Just like with regular unit tests, get a feeling for how much of your code is covered by your tests.
+
+<br>
 
 **Remember**: 100% code coverage does not mean that your code is error-free!

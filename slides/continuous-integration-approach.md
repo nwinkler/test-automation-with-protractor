@@ -10,6 +10,8 @@ To create *xUnit*-compatible output, which is understood by most Continuous Inte
 npm install --save-dev jasmine-reporters
 ```
 
+<br>
+
 `protractor.conf.js`:
 
 ```javascript

@@ -10,6 +10,7 @@ Use the [grunt-protractor-runner](https://github.com/teerapap/grunt-protractor-r
 npm install grunt-protractor-runner --save-dev
 ```
 
+<br>
 
 Automatic download of the WebDriver binaries as part of `npm install` (in `package.json`, paths abbreviated):
 
@@ -23,12 +24,16 @@ Automatic download of the WebDriver binaries as part of `npm install` (in `packa
 
 ### Create a configuration file
 
+`protractor.conf.js`:
+
 ```javascript
 exports.config = {
   specs: ['test/**/*.spec'],
   baseUrl:'http://localhost:9000/',
 };
 ```
+
+<br>
 
 Point it to your test files.
 
@@ -37,6 +42,8 @@ Define the URL to test.
 ---
 
 ### Create a Grunt configuration
+
+`Gruntfile.js`:
 
 ```javascript
 protractor: {
@@ -72,11 +79,15 @@ describe('my app', function() {
 
 Deploy/Start your web application
 
+<br>
+
 Run the tests
 
 ```bash
 grunt protractor:run
 ```
+
+<br>
 
 Watch in awe!
 
@@ -100,7 +111,7 @@ Each test step is executed asynchronously, waiting for the Angular digest cycle 
 
 ```javascript
 fooForm.evaluate('user.name').then(function (name) {
-  expect(name).toBe('Nils');
+  expect(name).toBe('Foo');
 });
 ```
 
@@ -112,10 +123,14 @@ The `evaluate` function allows you to take a look at the element's Angular *scop
 
 Protractor is primarily used to test Angular apps, since it integrates really well with the Angular lifecycle and scope.
 
+<br>
+
 Since it is just a wrapper around Selenium WebDriver, it can also be used to test non-Angular apps. Simply apply this change before running your test:
 
 ```javascript
 browser.ignoreSynchronization = true;
 ```
+
+<br>
 
 Protractor will now no longer wait for Angular to load, and you can use it to test any web application.
