@@ -15,8 +15,15 @@ Different kinds of tests for different purposes:
 * Integration Tests
 * Performance Tests
 * End-to-End Tests
+* Manual Tests
 * ...
 
 ---
 
 ### Why is Protractor great?
+
+* Built on top of Selenium.
+* Integrates into your build tool chain (e.g. *grunt*).
+* Tailored to testing *AngularJS* applications.
+* Natural fit for your application's architecture: Everything is JavaScript.
+* Developers enjoy writing test cases with Protractor.
