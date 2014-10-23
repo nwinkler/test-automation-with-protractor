@@ -3,4 +3,4 @@
 
 Nils Winkler
 
-FrankfurtJS, October 3rd 2014
+FrankfurtJS, October 30th 2014
