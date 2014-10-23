@@ -6,9 +6,9 @@
 
 Use unique ID values on your controls to allow easy identification of the screen elements.
 
-Try to auto-generate the ID values.
-
 Make sure the ID values are consistent and don't change across test invocations.
+
+Try to auto-generate the ID values or work with conventions.
 
 ---
 
@@ -34,13 +34,14 @@ Keyboard Input: Some operating systems (e.g. Mac OS X) handle keyboard input in 
 
 <br>
 
-Animations: Take rendering speed of the OS/browser into account.
+Animations: Take rendering speed of the OS/browser into account. <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```javascript
 var webDriver = protractor.getInstance().driver;
 
 webDriver.sleep(500);
 ```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 

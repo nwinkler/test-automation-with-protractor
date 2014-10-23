@@ -1,6 +1,6 @@
 ##  Would You Hire This Guy?
 
-#### (Excerpt from an anonymous CV)
+#### (Based on a true story)
 
 * Project 1: Wrote code with minimal errors.    <!-- .element: class="fragment" data-fragment-index="1" -->
 * Project 2: Wrote code with no errors.         <!-- .element: class="fragment" data-fragment-index="2" -->

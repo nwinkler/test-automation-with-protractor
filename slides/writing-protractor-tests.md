@@ -12,11 +12,12 @@ npm install grunt-protractor-runner --save-dev
 
 <br>
 
-Automatic download of the WebDriver binaries as part of `npm install` (in `package.json`, paths abbreviated):
+Automatic download of the WebDriver binaries as part of `npm install` (in `package.json`):
 
 ```json
 "scripts": {
-  "install": "node n_m/grunt-protractor-runner/.../webdriver-manager update"
+  "install": "node node_modules/grunt-protractor-runner/node_modules/\
+        protractor/bin/webdriver-manager update"
 }
 ```
 
@@ -52,7 +53,7 @@ protractor: {
     configFile: "protractor.conf.js"
   },
   run: {}
-},
+}
 ```
 
 ---
@@ -81,19 +82,20 @@ Deploy/Start your web application
 
 <br>
 
-Run the tests
+Run the tests <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```bash
 grunt protractor:run
 ```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 <br>
 
-Watch in awe!
+Watch in awe! <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---
 
-###  Angular Integration
+###  DOM Access
 
 Select DOM elements by ID, CSS, or by Angular model:
 
@@ -107,15 +109,24 @@ var input = fooForm.element(by.model('user.name'));
 
 ---
 
-Each test step is executed asynchronously, waiting for the Angular digest cycle to finish. You can also use promises:
+### Angular Integration
+
+Each test step is executed asynchronously, waiting for the Angular digest cycle to finish.
+
+<br>
+
+You can also use promises: <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```javascript
 fooForm.evaluate('user.name').then(function (name) {
   expect(name).toBe('Foo');
 });
 ```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 The `evaluate` function allows you to take a look at the element's Angular *scope*.
+
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
