@@ -37,6 +37,18 @@ describe('login', function() {
 
         var heading = present.element(by.css('h2'));
 
-        expect(heading.getText()).toBe('Would You Hire This Guy?');
+        expect(heading.getText()).toBe('Disclaimer');
+    });
+
+    it('should move to the previous slide when pressing the p key', function() {
+        webDriver.actions().sendKeys('p').perform();
+
+        webDriver.sleep(500);
+
+        var present = element(by.css('.present'));
+
+        var heading = present.element(by.css('h1'));
+
+        expect(heading.getText()).toBe('Test Automation with Protractor');
     });
 });
