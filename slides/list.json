@@ -1,7 +1,9 @@
 [
     "index.md",
     "disclaimer.md",
-    "would-you-hire-this-guy.md",
+    [
+        "would-you-hire-this-guy.md"
+    ],
     [
         "what-is-protractor.md"
     ],
