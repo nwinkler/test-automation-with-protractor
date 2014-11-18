@@ -43,6 +43,14 @@ webDriver.sleep(500);
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
+or - better: <!-- .element: class="fragment" data-fragment-index="2" -->
+
+```javascript
+browser.wait(element.isDisplayed);
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
 ---
 
 ### Reusable test libraries
